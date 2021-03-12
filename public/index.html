@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example </title>
+</head>
+<body>
+    <center>
+  <h1>Aprende Vocabulario en Frances </h1>
+    <h3>Da click en los botones para ver su traduccion</h3>
+
+    <p id="man">Manzana</p>
+    
+    <button type="button" onclick='document.getElementById("man").innerHTML = "Pomme"'>Da Click!</button>
+
+    <p id="am">Amarillo</p>
+    
+    <button type="button" onclick='document.getElementById("am").innerHTML = "Jaune"'>Da Click!</button>
+    <p id="lap">Lápiz</p>
+    
+    <button type="button" onclick='document.getElementById("lap").innerHTML = "Crayon"'>Da Click!</button>
+
+    <p id="cat">Gato</p>
+    
+    <button type="button" onclick='document.getElementById("cat").innerHTML = "Chat"'>Da Click!</button>
+    <p id="lib">Libreta</p>
+    
+    <button type="button" onclick='document.getElementById("lib").innerHTML = "Carnet"'>Da Click!</button>
+    <p id="cor">Corazon</p>
+    
+    <button type="button" onclick='document.getElementById("cor").innerHTML = "Coeur"'>Da Click!</button>
+
+
+
+
+
+
+
+    
+
+</center>
+
+
+
+<ul>
+    <li name="objeto">Pincel</li>
+      <li name="animalito">Caballo</li>
+     
+    <li name="animalito">Pez</li>
+    
+    <li name="objeto">Pintura</li>
+    
+    <li name="objeto">Colores</li>
+     <li name="animalito">Perro</li>
+    <li name="objeto">Figuras</li>
+    <li name="animalito">Pajaro</li>
+    <li name="animalito">Ardilla</li>
+    </ul>
+    
+    <p>Da click para ver la palabras en frances</p>
+    
+    <button  id="button1" onclick="myFunction()">¡Intentalo!</button>
+    
+    <script>
+    function myFunction() {
+        var list = document.getElementsByTagName("UL")[0];
+    list.getElementsByTagName("LI")[0].innerHTML = "Pinceau";
+        list.getElementsByTagName("LI")[1].innerHTML = "Cheval";
+    
+     list.getElementsByTagName("LI")[2].innerHTML = "Poisson";
+     
+     list.getElementsByTagName("LI")[3].innerHTML = "Peinture";
+     
+     list.getElementsByTagName("LI")[4].innerHTML = "Couleurs";
+     list.getElementsByTagName("LI")[5].innerHTML = "Chien";
+     list.getElementsByTagName("LI")[6].innerHTML = "Figures ";
+    list.getElementsByTagName("LI")[7].innerHTML = "Oiseau";
+     list.getElementsByTagName("LI")[8].innerHTML = "Écureuil";
+    }
+    </script>
+    <br>
+    <br>
+    <br>
+    <button  id="button1" onclick="myFunctionC()">Da click aqui para colorear los animales</button>
+    
+    <script>
+    function myFunctionC() {
+      var x = document.getElementsByName("animalito");
+      var i;
+      for (i = 0; i < x.length; i++) {
+        x[i].style.backgroundColor = "#A3BD77";
+      }
+    }
+    
+    
+    
+    </script>
+    
+    
+    
+    <button  id="button1" onclick="myFunctionO()">Da click aqui para colorear los objetos</button>
+    
+    <script>
+    function myFunctionO() {
+      var x = document.getElementsByName("objeto");
+      var i;
+      for (i = 0; i < x.length; i++) {
+        x[i].style.backgroundColor = "#D3BCF6";
+      }
+    }
+    
+    
+    
+    </script>
+
+
+
+<style>
+    body {
+ background-image: url("blue.jpg");
+ 
+}
+
+
+button {
+    background-color: #54D0EC; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+button {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #54D0EC;
+}
+button:hover {
+    background-color:#54D0EC ;
+    color: white;
+}
+
+#button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #5EBB85; 
+}
+#button1:hover {
+    background-color:#5EBB85 ; 
+    color: white;
+}
+
+
+
+
+</style>
+   
+</body>
+</html>
